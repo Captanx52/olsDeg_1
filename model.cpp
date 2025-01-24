@@ -31,7 +31,7 @@ double computeDerivative_m(const vector<Point> &points, double m, double b)
     for (const auto &point : points)
     {
         double error = point.y - (m * point.x + b);
-        derivative_m -= 2 * point.x * error; // مشتق نسبت به m
+        derivative_m -= 2 * point.x * error;
     }
     return derivative_m;
 }
@@ -43,7 +43,7 @@ double computeDerivative_b(const vector<Point> &points, double m, double b)
     for (const auto &point : points)
     {
         double error = point.y - (m * point.x + b);
-        derivative_b -= 2 * error; // مشتق نسبت به b
+        derivative_b -= 2 * error;
     }
     return derivative_b;
 }
